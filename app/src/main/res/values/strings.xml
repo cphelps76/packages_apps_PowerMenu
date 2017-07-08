@@ -1,0 +1,17 @@
+<resources>
+    <!-- App name -->
+    <string name="app_name">Power Menu</string>
+
+    <!-- Power menu -->
+    <string name="shutdown_title">Power off</string>
+    <string name="reboot_title">Reboot</string>
+    <string name="flightMode_on">Airplane mode on</string>
+    <string name="flightMode_off">Airplane mode off</string>
+
+    <!-- Reboot menu -->
+    <string name="reboot_option">Select reboot option:</string>
+    <string name="reboot_system">Reboot system</string>
+    <string name="reboot_recovery">Reboot recovery</string>
+    <string name="reboot_bootloader">Reboot bootloader</string>
+    <string name="cancel">Cancel</string>
+</resources>

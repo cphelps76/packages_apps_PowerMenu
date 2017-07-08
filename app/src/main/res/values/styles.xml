@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="dialog_dark" parent="android:Theme.Material.Dialog.Alert">
+        <item name="@android:textSize">@dimen/dialog_text_size</item>
+    </style>
+
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/shutdown_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:orientation="horizontal"
+        android:paddingStart="10dip"
+        android:paddingEnd="10dip"
+        android:paddingTop="6dip"
+        android:paddingBottom="6dip">
+
+        <ImageView
+            android:id="@+id/shutdown_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dip"
+            android:scaleType="center"
+            android:background="@drawable/action_indicator_oval" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dip">
+            <TextView android:id="@+id/shutdown_message"
+                android:text="@string/shutdown_title"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dialog_text_size"
+                android:layout_marginStart="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reboot_container"
+        android:layout_below="@+id/shutdown_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:orientation="horizontal"
+        android:paddingStart="10dip"
+        android:paddingEnd="10dip"
+        android:paddingTop="6dip"
+        android:paddingBottom="6dip">
+
+        <ImageView
+            android:id="@+id/reboot_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dip"
+            android:scaleType="center"
+            android:background="@drawable/action_indicator_oval" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dip">
+            <TextView android:id="@+id/reboot_message"
+                android:text="@string/reboot_title"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dialog_text_size"
+                android:layout_marginStart="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/flightMode_container"
+        android:layout_below="@+id/reboot_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:orientation="horizontal"
+        android:paddingBottom="6dip"
+        android:paddingEnd="10dip"
+        android:paddingStart="10dip"
+        android:paddingTop="6dip">
+
+        <ImageView
+            android:id="@+id/flightMode_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dip"
+            android:background="@drawable/action_indicator_oval"
+            android:scaleType="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dip"
+            android:orientation="vertical">
+            <TextView android:id="@+id/flightMode_message"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dialog_text_size"
+                android:layout_marginStart="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
