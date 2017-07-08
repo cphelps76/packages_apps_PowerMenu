@@ -8,18 +8,17 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-public class FooterElementGenerator {
+class FooterElementGenerator {
 
-    Context context;
-    LinearLayout elementView;
+    private Context context;
 
     FooterElementGenerator(Context context){
         this.context = context;
     }
 
-    public View getView(Drawable icon){
+    View getView(Drawable icon){
 
-        elementView = new LinearLayout(context);
+        LinearLayout elementView = new LinearLayout(context);
 
         ImageView iconView = new ImageView(context);
         iconView.setImageDrawable(icon);

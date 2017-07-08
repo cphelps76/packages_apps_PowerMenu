@@ -13,8 +13,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.demented.cphelps76.powermenu.R;
-
 public class PowerMenuActivity extends Activity {
 
     LinearLayout viewFooterElements;
@@ -41,7 +39,7 @@ public class PowerMenuActivity extends Activity {
         reboot = findViewById(R.id.reboot_container);
         flightMode = findViewById(R.id.flightMode_container);
 
-        ImageView shutDownView = (ImageView) findViewById(R.id.shutdown_icon);
+        ImageView shutDownView = findViewById(R.id.shutdown_icon);
         Drawable shutDownIcon = ContextCompat.getDrawable(this,
                 R.drawable.ic_power_settings);
         shutDownView.setImageDrawable(shutDownIcon);
@@ -52,7 +50,7 @@ public class PowerMenuActivity extends Activity {
             }
         });
 
-        ImageView rebootView = (ImageView) findViewById(R.id.reboot_icon);
+        ImageView rebootView = findViewById(R.id.reboot_icon);
         Drawable rebootIcon = ContextCompat.getDrawable(this,
                 R.drawable.ic_loop);
         rebootView.setImageDrawable(rebootIcon);
@@ -71,8 +69,8 @@ public class PowerMenuActivity extends Activity {
         String flightModeOn = getResources().getString(R.string.flightMode_on);
         String flightModeOff = getResources().getString(R.string.flightMode_off);
 
-        ImageView flightModeIcon = (ImageView) findViewById(R.id.flightMode_icon);
-        TextView flightModeText = (TextView) findViewById(R.id.flightMode_message);
+        ImageView flightModeIcon = findViewById(R.id.flightMode_icon);
+        TextView flightModeText = findViewById(R.id.flightMode_message);
 
         if (actions.isFlightModeOn()) {
             flightModeIcon.setImageDrawable(flightOnIcon);
@@ -140,7 +138,7 @@ public class PowerMenuActivity extends Activity {
     }
 
     private void addFooterElements() {
-        viewFooterElements = (LinearLayout) findViewById(R.id.viewFooterElements);
+        viewFooterElements = findViewById(R.id.viewFooterElements);
         footerElementGenerator = new FooterElementGenerator(this);
 
         Drawable silentIcon = ContextCompat.getDrawable(this,R.drawable.ic_volume_off);
