@@ -1,6 +1,7 @@
 *.iml
 app/app.iml
 app/app-release.apk
+app/PowerMenu.apk
 .project
 .classpath
 .project.properties
